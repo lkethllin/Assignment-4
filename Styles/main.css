@@ -1,0 +1,104 @@
+
+body{
+    font-family: Gotham;
+}
+
+.header {
+    background-image: url(..//Images/RP-STUDIOS.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.menu {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    
+}
+
+.hero {
+    background-image: linear-gradient(black, rgb(34, 94, 106));
+    background-repeat: no-repeat;
+    background-position: 90%;
+    height: 180px;
+    color: white;
+    padding: 10px;
+}
+h1{
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+p{
+    text-align: left;
+}
+
+img{
+    width: 110px;
+    height: 110px;
+    float: right;
+    padding-right: 10px;
+}
+
+.button{
+    text-transform: uppercase;
+    font-weight: 900;
+    display: inline-block;
+    background-color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: rgb(34, 94, 106);
+    margin-top: 20px;
+}
+
+#services {
+
+    background-image: linear-gradient( rgb(34, 94, 106), white);
+    padding-left: 10px;
+    color: white;
+    height: 160px;
+    margin-bottom: 20px;
+    
+}
+.cellphone {
+    width: 110px;
+    height: 110px;
+    float: left;
+    padding-right: 10px;
+}
+li{
+    color: black;
+}
+
+.wpp {
+    text-transform: uppercase;
+    font-weight: 900;
+    display: inline-flex;
+    background-color: rgb(34, 94, 106);
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-left: 10px;
+    
+    
+    
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    height: 25px;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    margin-top: 10px;
+
+}
