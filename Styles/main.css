@@ -1,12 +1,11 @@
+/* Responsive Website Mobile */
 
 body{
     font-family: Gotham;
+    
 }
 
 .header {
-    background-image: url(..//Images/RP-STUDIOS.png);
-    background-repeat: no-repeat;
-    background-size: contain;
     background-color: rgb(0, 0, 0);
     width: 100%;
     height: 80px;
@@ -22,17 +21,24 @@ body{
     
 }
 
+
+/*Hide the image with class `.largekitten` for mobile devices  */
+.logo {
+    display: none;
+}
+
+
 .hero {
     background-image: linear-gradient(black, rgb(34, 94, 106));
-    background-repeat: no-repeat;
-    background-position: 90%;
-    height: 180px;
+    height: auto;
     color: white;
     padding: 10px;
+    
 }
 h1{
     padding-bottom: 10px;
     font-size: 24px;
+    
 }
 p{
     text-align: left;
@@ -57,23 +63,39 @@ img{
     margin-top: 20px;
 }
 
-#services {
+.services {
 
+   
     background-image: linear-gradient( rgb(34, 94, 106), white);
     padding-left: 10px;
     color: white;
     height: 160px;
-    margin-bottom: 20px;
+
+}
+
+/*Remove bullet points and add border‐bottom to each `.gameslist` list item and Add padding of 10px to the `.gameslist` list items */
+
+ul{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style-type: none;
+    color: black;
+    padding-left: 10px;
     
 }
+
+li {
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
 .cellphone {
     width: 110px;
     height: 110px;
     float: left;
     padding-right: 10px;
-}
-li{
-    color: black;
+
 }
 
 .wpp {
@@ -87,18 +109,135 @@ li{
     color: rgb(255, 255, 255);
     margin-top: 10px;
     margin-left: 10px;
-    
-    
-    
-}
+    }
 
 footer{
     background-color: rgb(0, 0, 0);
-    height: 25px;
     font-size: 14px;
     text-align: center;
     color: rgb(255, 255, 255);
-    padding-top: 10px;
+    padding: 5px;
     margin-top: 10px;
 
 }
+
+/* Responsive Website Mobile Large: */
+@media screen and (min-width: 480px) 
+{
+
+body {
+    font-size: 130%;
+
+}
+
+.button{ 
+    margin-top: 40px;
+}
+/* hide the image with class `.smallkitten` and display the image with class `.largekitten` */
+
+.logowhite {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    padding-left: 20px;
+
+
+    
+}
+.header {
+    justify-content: space-between;
+}
+ul {
+    flex-direction: column;
+    padding-left: 20px;
+    
+   
+}
+li {
+    list-style-type: disc;
+    
+    
+}
+
+}
+/* Responsive Website Tablet: float the list items of `.gameslist` list and remove the border from bottom and add border to right of each item*/
+@media screen and (min-width: 800px) {
+
+li {
+    border-bottom-style: none;
+    border-right-style: solid;
+    border-width: 1px;
+    list-style-type: none;
+    padding: 0 10px 0  10px;
+   
+}
+
+ul {
+    display: flex;
+    float: inline-start;
+    flex-direction: row;
+}
+
+.wpp {
+margin-left: 30px;
+margin-top: 20px;
+
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.cellphone {
+    width: 150px;
+    height: 150px;
+}
+
+.services
+{
+height: 180px;
+}
+}
+
+/* Responsive Website  Laptop: set the font‐size of the h1 to 4rem*/
+@media screen and (min-width: 900px) and (max-width:1200px) {
+
+h1{ 
+    font-size: 4rem;
+}
+.services
+{
+    height: 220px;
+}   
+}
+
+/* Responsive Website  Larger screens: set the font‐size of the h1 to 6rem*/
+@media screen and (min-width: 1200px) {
+
+body {
+        font-size: 200%;
+    }
+h1{ 
+    font-size: 6rem;
+}
+.hero {
+    height: 400px;
+}
+.services
+{
+    height: 400px;
+
+}     
+
+img{
+    width: 200px;
+    height: 200px;
+}
+.cellphone{
+    width: 200px;
+    height: 200px;
+}
+    }
